@@ -4,3 +4,14 @@ It doesn’t have to be complicated, but draw something different than we have d
 Try setting .speed(10) for the turtle to draw fast, or .speed(0) for it to draw super fast with no animation.)'''
 
 import turtle
+
+wn = turtle.Screen()
+
+nimo = turtle.Turtle()
+nimo.speed(0)
+
+for i in range(50):
+    nimo.forward(120 - i*5 )
+    nimo.left(90)
+
+wn.exitonclick()
